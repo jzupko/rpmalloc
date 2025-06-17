@@ -770,6 +770,8 @@ get_thread_id(void) {
 #endif
 }
 
+uintptr_t rpmalloc_get_thread_id(void) { return get_thread_id(); }
+
 //! Set the current thread heap
 static void
 set_thread_heap(heap_t* heap) {
